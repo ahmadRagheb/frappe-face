@@ -1,0 +1,99 @@
+{
+ "background_style": "Fill Screen", 
+ "block_modules": [], 
+ "creation": "2017-09-15 03:51:56.265665", 
+ "defaults": [], 
+ "docstatus": 0, 
+ "doctype": "User", 
+ "email": "admin@example.com", 
+ "enabled": 1, 
+ "first_name": "Administrator", 
+ "full_name": "Administrator", 
+ "idx": 0, 
+ "last_active": "2017-09-22 08:04:41.219427", 
+ "last_ip": "127.0.0.1", 
+ "last_known_versions": "{\"frappe\": {\"version\": \"8.10.6\", \"branch_version\": \"8.x.x-beta (e1b2f35)\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"develop\", \"title\": \"Frappe Framework\"}}", 
+ "last_login": "2017-09-22 08:04:40.960956", 
+ "login_after": 0, 
+ "login_before": 0, 
+ "modified": "2017-09-15 03:51:58.249766", 
+ "modified_by": "Administrator", 
+ "mute_sounds": 0, 
+ "name": "Administrator", 
+ "new_password": "", 
+ "owner": "Administrator", 
+ "roles": [
+  {
+   "role": "Administrator"
+  }, 
+  {
+   "role": "System Manager"
+  }, 
+  {
+   "role": "Accounts Manager"
+  }, 
+  {
+   "role": "Accounts User"
+  }, 
+  {
+   "role": "All"
+  }, 
+  {
+   "role": "Blogger"
+  }, 
+  {
+   "role": "Guest"
+  }, 
+  {
+   "role": "Knowledge Base Contributor"
+  }, 
+  {
+   "role": "Knowledge Base Editor"
+  }, 
+  {
+   "role": "Maintenance Manager"
+  }, 
+  {
+   "role": "Maintenance User"
+  }, 
+  {
+   "role": "Newsletter Manager"
+  }, 
+  {
+   "role": "Purchase Manager"
+  }, 
+  {
+   "role": "Purchase Master Manager"
+  }, 
+  {
+   "role": "Purchase User"
+  }, 
+  {
+   "role": "Report Manager"
+  }, 
+  {
+   "role": "Sales Manager"
+  }, 
+  {
+   "role": "Sales Master Manager"
+  }, 
+  {
+   "role": "Sales User"
+  }, 
+  {
+   "role": "Super Email User"
+  }, 
+  {
+   "role": "Website Manager"
+  }
+ ], 
+ "send_me_a_copy": 0, 
+ "send_password_update_notification": 0, 
+ "send_welcome_email": 1, 
+ "simultaneous_sessions": 1, 
+ "thread_notify": 1, 
+ "unsubscribed": 0, 
+ "user_emails": [], 
+ "user_type": "System User", 
+ "username": "administrator"
+}

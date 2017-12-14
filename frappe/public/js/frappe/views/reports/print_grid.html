@@ -1,0 +1,37 @@
+<!-- title -->
+{% if title %}
+<h2>{{ __(title) }}</h2>
+<hr>
+{% endif %}
+<table class="table table-bordered">
+    <!-- heading -->
+    <thead>
+        <tr>
+        {% for col in columns %}
+            {% if col.name && col._id !== "_check" %}
+            <th style="min-width: {{ col.minWidth }}px"
+                {% if col.docfield && in_list(["Float", "Currency", "Int"], col.docfield.fieldtype) %}
+                    class="text-right"
+                {% endif %}>{{ __(col.name) }}</th>
+            {% endif %}
+        {% endfor %}
+        </tr>
+    </thead>
+    <!-- body -->
+    <tbody>
+        {% for row in data %}
+            <tr>
+            {% for col in columns %}
+                {% if col.name && col._id !== "_check" %}
+
+					{% var value = col.fieldname ? row[col.fieldname] : row[col.field]; %}
+
+                	<td>{{ col.formatter
+	                        ? col.formatter(row._index, col._index, value, col, row, true)
+	                        : value }}</td>
+                {% endif %}
+            {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
