@@ -225,7 +225,10 @@ frappe.ui.form.on("User", "face_button", function(frm) {
 
     /* server connection via wevsocket */
 
-    var ws = new WebSocket("ws://0.0.0.0:9001");
+    // var ws = new WebSocket("ws://0.0.0.0:9001");
+    console.log(location.hostname);
+    var ws = new WebSocket("wss://"+location.hostname+":9001");    
+
     ws.onopen = function() {
         console.log("Openened connection to websocket");
     }
